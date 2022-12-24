@@ -8,7 +8,49 @@
         <title>Home | UO Photo Club</title>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
-    <body>
-        <h1>hello world</h1>
+    <body onload="shuffleload()">
+        <script src="script.js"></script>
+        <a href="index.html"><img src='images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
+        <div id="topBar">. .  The Photography Club</div>
+        <img src="images/changables/event.png" alt="Club Logo event variation" id='eventImg' width="20%">
+        <div class="parallax"></div>
+        <center>
+            <div>
+                <button id='shuffleBtn' onclick="shuffle()">Suffle</button>
+                <br><br><br><br>
+                <!--<style>
+                    img1{
+                        transform:rotate(5deg);
+                    }img2{
+                        transform:rotate(-6deg);
+                    }img3{
+                        transform:rotate(8deg);
+                    }
+                </style>-->
+                <div id="photos"> <!--try to put them above each other and when you click it moves it to the side changes the z alignement then goes back "behind"-->
+                    <div id='img1' class="imgReel"><img src="1.jpg"></div>
+                    <div id='img2' class="imgReel"><img src="2.jpg"></div>
+                    <div id='img3' class="imgReel"><img src="3.jpg"></div>
+                </div><br><br><br><br>
+                <h2>
+                    Connect with us!
+                </h2>
+                <p>
+                    Email: uophotoclub@gmail.com<br>
+                    Discord: bruh.gg<br>
+                    Instagram: @bruhrurhruh<br>
+                    Twitter: @bruhruhruhr<br>
+                </p><br>
+                <h2>
+                    Want to join us in our next event?
+                </h2>
+                <p>
+                    We always look forward for new photographers joining us in our events.<br>
+                    Dosen't matter if you're a beginner or a pro: We want to see your photos!
+                </p>
+                <button onclick="apply()">Apply now!</button>
+                <p style="font-size:12px">By filling this form you agree to our <a href="policy.html">terms and privacy policy</a>.</p>
+            </div>
+        </center>
     </body>
 </html>
