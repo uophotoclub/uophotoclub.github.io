@@ -30,9 +30,12 @@ body, html {
   } /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_device*/
 
 
+#name {
+    z-index:2;
+}
 
 #shutter {
-    position:absolute;
+    position:fixed;
     top:4vh;
     left:4vh;
     z-index:2;
@@ -43,10 +46,11 @@ body, html {
     position:absolute;
     width:208.5vh;
     height:22vh;
-    opacity: 0.7;
+    opacity: 0;
     transition-duration: 0.4s;
     z-index:1;
-    font-size:100px;
+    font-size:12vh;
+    text-align: center;
 }
 #topBar:hover {
     transition-duration: 0.4s;
