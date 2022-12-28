@@ -1,7 +1,40 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background: linear-gradient(to bottom, #ff99cc 0%, #33ccff 100%);
+    /*background: black;/*linear-gradient(to bottom, rgb(74, 204, 255) 0%, rgb(186, 43, 253) 100%);*/
+    background-repeat: no-repeat;
+    background-attachment:fixed;
 }
+
+/*#flash {
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    background:linear-gradient(to bottom, rgb(74, 204, 255) 0%, rgb(210, 62, 255) 50%, rgb(255, 63, 239) 75%, rgb(255, 61, 181) 100%);
+    z-index:-1;
+}
+#flash::before {
+    content:'';
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background:linear-gradient(to top, rgb(201, 22, 255) 0%, rgb(119, 194, 255) 50%, rgb(126, 169, 235) 75%, rgb(61, 61, 255) 100%);
+    opacity:0;
+    animation:flash 3500ms ease-in-out 0s infinite alternate-reverse;
+    z-index:-1;
+}
+@keyframes flash {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}*/
+
 
 body, html {
     height: 100%;
@@ -33,10 +66,16 @@ body, html {
 
 #name {
     z-index:2;
+    /*transition-duration: 0.5s;*/
     position:absolute;
-    right:1%;
+    right:20%;
     top:2.5%;
+    
 }
+/*#name:hover {
+    transition-duration: 0.5s;
+    top:1.5%;
+}*/
 
 #shutter {
     position:fixed;
@@ -46,11 +85,10 @@ body, html {
 }
 
 #topBar {
-    background-color: rgb(36, 35, 35);
+    background-color: rgb(46, 46, 46);
     position:absolute;
     width:208.5vh;
     height:22vh;
-    opacity: 1;
     transition-duration: 0.4s;
     z-index:1;
     font-size:12vh;
@@ -60,12 +98,11 @@ body, html {
 }
 #topBar:hover {
     transition-duration: 0.4s;
-    opacity: 0.5;
+    background-color: rgb(36, 35, 35);
 }
 
 #eventImg {
     position:absolute;
-    left:80vh;
     top:30vh;
     border:5px solid black;
     border-radius:10px;
@@ -75,6 +112,18 @@ body, html {
 #eventImg:hover {
     transition-duration: 0.3s;
     box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+}
+
+h3 {
+    position:absolute;
+    top:80vh;
+    z-index:3;
+    text-align:center;
+}
+
+.outline {
+    border: 5px dashed black;
+    border-radius: 15px;
 }
 
 
@@ -104,15 +153,15 @@ body, html {
 @keyframes flip {
     0% {
         left:20;
-        z-index: 3;
+        z-index: 7;
     }
     50% {
         transform:rotate(4deg);
         left:55%;
-        z-index: 3;
+        z-index: 7;
     }
     51% {
-        z-index: -2;
+        z-index: 2;
     }
     80% {
         transform:rotate(4deg);
@@ -121,7 +170,7 @@ body, html {
     100% {
         transform:rotate(0deg);
         left:20;
-        z-index: -2;
+        z-index: 2;
         
     }
 }

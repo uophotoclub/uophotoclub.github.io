@@ -1,9 +1,9 @@
 var frontImg = 1;
 
 function shuffleload() {
-    document.getElementById('img1').style.zIndex = 3;
-    document.getElementById('img2').style.zIndex = 2;
-    document.getElementById('img3').style.zIndex = 1;
+    document.getElementById('img1').style.zIndex = 7;
+    document.getElementById('img2').style.zIndex = 6;
+    document.getElementById('img3').style.zIndex = 5;
 }
 
 function shuffle() {
