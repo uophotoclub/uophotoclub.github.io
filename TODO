@@ -3,5 +3,7 @@
 - add french option for all text
 - fix event title link in div that is extending to the sides of the page
 
-extra:
-- add option for low cpu computers (turn off flash)
+- prevent button from making divs bigger
+
+
+- smt weird with the image reel, 2 dosent change zindex until last second and 3 wont start on a rotated position without teleporting

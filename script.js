@@ -1,15 +1,19 @@
 var frontImg = 1;
 
 function loadContent() {
+    shuffleLoad();
+    setTimeout(function() {
+        typeEventName();
+    }, 1500);
+}
+
+function shuffleLoad() {
     img1.setAttribute("style", "transform: rotate(" + 7 + "deg)");
     img2.setAttribute("style", "transform: rotate(" + -4 + "deg)");
     //img3.setAttribute("style", "transform: rotate(" + 1 + "deg)");
     document.getElementById('img1').style.zIndex = 7;
     document.getElementById('img2').style.zIndex = 6;
     document.getElementById('img3').style.zIndex = 5;
-    setTimeout(function() {
-        typeEventName();
-    }, 1500);
 }
 
 function shuffle() {
@@ -26,7 +30,7 @@ function shuffle() {
         frontImg += 1;
     } else {
         frontImg = 1;
-        shuffleload();
+        shuffleLoad();
     }
 }
 
