@@ -1,6 +1,6 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    /*background: black;/*linear-gradient(to bottom, rgb(74, 204, 255) 0%, rgb(186, 43, 253) 100%);*/
+    background: linear-gradient(to bottom, rgb(74, 204, 255) 0%, rgb(228, 43, 253) 100%);
     background-repeat: no-repeat;
     background-attachment:fixed;
 }
@@ -118,6 +118,14 @@ body, html {
     box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
 }
 
+#photos {
+    padding:3%;
+}
+
+h2 {
+    font-size:30px;
+}
+
 h4 {
     position:absolute;
     top:80vh;
@@ -143,18 +151,20 @@ h4 {
     /*border: 4px solid black;
     border-radius: 6px;*/
 }
-
-#shuffleBtn {
+button {
     transition-duration: 0.5s;
-    padding:10px;
-    background-color:lightblue;
+    font-family:'Courier New', Courier, monospace;
+    font-size:15px;
+    padding:20px;
+    background-color: rgba(0,0,0,0);
     border-radius: 4px;
     border: 2px solid black;
 }
 
-#shuffleBtn:hover {
+button:hover {
     transition-duration: 0.5s;
-    background-color: rgb(89, 192, 226);
+    background-color: rgb(45, 135, 238);
+    font-size:20px;
 }
 
 @keyframes flip {
@@ -172,12 +182,9 @@ h4 {
     }
     80% {
         transform:rotate(4deg);
-
     }
     100% {
-        /*transform:rotate(0deg);*/
         left:20;
         z-index: 2;
-        
     }
 }
