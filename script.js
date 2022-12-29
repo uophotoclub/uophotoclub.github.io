@@ -1,6 +1,6 @@
 var frontImg = 1;
 
-function shuffleload() {
+function loadContent() {
     img1.setAttribute("style", "transform: rotate(" + 7 + "deg)");
     img2.setAttribute("style", "transform: rotate(" + -4 + "deg)");
     //img3.setAttribute("style", "transform: rotate(" + 1 + "deg)");
@@ -36,8 +36,8 @@ function apply() {
 
 
 var i = 0;
-var txt = 'Winter Holidays!'; /* The text */
-var speed = 150; /* The speed/duration of the effect in milliseconds */
+var txt = 'Winter Holidays!'; //CHANGABLE TEXT
+var speed = 150;
 
 function typeEventName() {
   if (i < txt.length) {
