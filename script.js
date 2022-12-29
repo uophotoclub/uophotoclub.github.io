@@ -7,6 +7,9 @@ function shuffleload() {
     document.getElementById('img1').style.zIndex = 7;
     document.getElementById('img2').style.zIndex = 6;
     document.getElementById('img3').style.zIndex = 5;
+    setTimeout(function() {
+        typeEventName();
+    }, 1500);
 }
 
 function shuffle() {
@@ -29,4 +32,17 @@ function shuffle() {
 
 function apply() {
     alert("The application form isn't ready yet!")
+}
+
+
+var i = 0;
+var txt = 'Winter Holidays!'; /* The text */
+var speed = 150; /* The speed/duration of the effect in milliseconds */
+
+function typeEventName() {
+  if (i < txt.length) {
+    document.getElementById("eventName").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeEventName, speed);
+  }
 }

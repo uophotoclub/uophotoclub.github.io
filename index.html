@@ -9,22 +9,26 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>-->
     </head>
     <body onload="shuffleload()">
-        <div id="flash"></div>
+        <!--<div id="flash"></div>-->
         <script src="script.js"></script>
         <a href="index.html"><img src='images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
         <div id="topBar"></div>
         <div id="name"><img src="images/name.png"></div>
         <br>
-        <div style="text-align:center">
-            <a href="event.html"><img src="images/changables/event.png" alt="Club Logo event variation" id='eventImg' width="20%"></a>
-            <h4>Welcome!</h4>
-        </div>     
-        <div class="parallax"></div>
+        <!--<div style="margin-left:auto;margin-right:auto;">  
+        </div>-->
+            <div class="parallax">
+                <center>
+                    <a href="event.html"><img src="images/changables/event.png" alt="Club Logo event variation" id='eventImg' width="20%"></a>
+                    <h4>This month's theme:</h4>
+                    <a href="event.html"><i><u><div id="eventName"></div></u></i></a>
+                </center>
+            </div>
         <center>
             <div><br><br>
                 <div class="outline">
                     <h2>
-                        A place to share.
+                        A place to share. Learn. & Create.
                     </h2>
                     <button id='shuffleBtn' onclick="shuffle()">Suffle</button>
                     <div id="photos"> <!--try to put them above each other and when you click it moves it to the side changes the z alignement then goes back "behind"-->
@@ -32,8 +36,6 @@
                         <div id='img2' class="imgReel"><img src="images/photo/2.jpg"></div>
                         <div id='img3' class="imgReel"><img src="images/photo/3.jpg"></div>
                     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    
-                    
                 </div>
                 <br>
                 <div class="outline">

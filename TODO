@@ -1,3 +1,6 @@
-- add photo tilt to photo reel
-- text under event logo
+- each box unfade animation and going up as user scrolls
+
+- add french option for all text
+
+extra:
 - add option for low cpu computers (turn off flash)
