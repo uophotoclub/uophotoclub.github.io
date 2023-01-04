@@ -111,10 +111,25 @@ body, html {
     border:5px solid black;
     border-radius:10px;
     transition-duration: 0.3s;
+    animation: fade 3s ease;
+
 }
 #eventImg:hover {
     transition-duration: 0.3s;
     box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+}
+
+.fade {
+    animation: fade 5s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity:0;
+	}
+	50% {
+        opacity:1;
+	}
 }
 
 #photos {
@@ -165,9 +180,16 @@ a:active {
     padding:1%;
     background-color: rgba(0,0,0,0.2);
     width:75%;
+    animation: fade 2s ease;
+    opacity: 0;
+	transform: translate(0, 10vh);
+	transition: all 1s;
 }
 
-
+.outline.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}
 
 
 
