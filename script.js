@@ -1,10 +1,15 @@
 var frontImg = 1;
 var LangIsEnglish = true;
 
-function loadContent() {
+function loadContent(l) {
     shuffleLoad();
+    if (l == "en") {
+        var txt = 'Winter Holidays!'; //CHANGABLE TEXT
+    } else if (l == 'fr') {
+        var txt = "Vacances d'hivers!";
+    }
     setTimeout(function() {
-        typeEventName();
+        typeEventName(txt, 0);
     }, 1500);
 }
 
@@ -39,48 +44,24 @@ function apply() {
     alert("The application form isn't ready yet!")
 }
 
-
-var i = 0;
-var txt = 'Winter Holidays!'; //CHANGABLE TEXT
-var speed = 150;
-
-function typeEventName() {
-  if (i < txt.length) {
-    document.getElementById("eventName").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeEventName, speed);
-  }
+function typeEventName(txt, i) {
+    console.log(txt);
+    if (i < txt.length) {
+        document.getElementById("eventName").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(function() {
+            typeEventName(txt, i);
+        }, 150)
+    }
 }
-
 
 $(document).on("scroll", function() {
     var pageTopVal = $(document).scrollTop();
     var pageBottomVal = pageTopVal + $(window).height();
     var logos = $(".outline");
-  
     for (var i = 0; i < logos.length; i++) {
-  
         if ($(logos[i]).position().top < pageBottomVal) {
             $(logos[i]).addClass("visible");
-        }/* else {
-            $(logos[i]).removeClass("visible");
-        }*/
+        }
     }
 });
-
-//changes the language of the site
-function changeLang() {
-    document.getElementById("lang").disabled = true;
-    if (LangIsEnglish == true) {
-        //change to french
-        console.log("change to french");
-        LangIsEnglish = false;
-    } else {
-        //change to english
-        console.log("change to english");  //the website language is gonna go back to english if they go on a new page... look into 'session'
-        LangIsEnglish = true;
-    }
-    setTimeout(function() {
-        document.getElementById("lang").disabled = false;
-    }, 2000);
-}
