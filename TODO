@@ -1,8 +1,6 @@
-- each box unfade animation and going up as user scrolls
-
 - add french option for all text
 - fix event title link in div that is extending to the sides of the page
-
+- when you hover over the shutter it turns like 90 degs
 - prevent button from making divs bigger
 
 

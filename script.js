@@ -1,4 +1,5 @@
 var frontImg = 1;
+var LangIsEnglish = true;
 
 function loadContent() {
     shuffleLoad();
@@ -61,8 +62,25 @@ $(document).on("scroll", function() {
   
         if ($(logos[i]).position().top < pageBottomVal) {
             $(logos[i]).addClass("visible");
-        } else {
+        }/* else {
             $(logos[i]).removeClass("visible");
-        }
+        }*/
     }
 });
+
+//changes the language of the site
+function changeLang() {
+    document.getElementById("lang").disabled = true;
+    if (LangIsEnglish == true) {
+        //change to french
+        console.log("change to french");
+        LangIsEnglish = false;
+    } else {
+        //change to english
+        console.log("change to english");  //the website language is gonna go back to english if they go on a new page... look into 'session'
+        LangIsEnglish = true;
+    }
+    setTimeout(function() {
+        document.getElementById("lang").disabled = false;
+    }, 2000);
+}
