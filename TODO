@@ -3,5 +3,6 @@
 - when you hover over the shutter it turns like 90 degs
 - prevent button from making divs bigger
 
+- fix 2022 thing
 
 - smt weird with the image reel, 2 dosent change zindex until last second and 3 wont start on a rotated position without teleporting

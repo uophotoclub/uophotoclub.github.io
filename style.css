@@ -81,28 +81,28 @@ body, html {
 
 #shutter {
     position:fixed;
-    top:5vh;
+    top:4vh;
     left:3.5vw;
     z-index:3;
 }
 
-#lang {
+.lang {
     position:relative;
     z-index:2;
     border:1px dashed black;
     transition-duration: 0.5s;
     padding:20px;
     top:auto;
-    right:2vw;
-    font-size:17px;
+    /*right:2vw;*/
+    font-size:25px;
     color:black;
     background-color: rgba(0,0,0,0);
 }
-#lang:hover {
+.lang:hover {
     transition-duration: 0.5s;
-    background-color: rgb(0,0,0,0.2);
-    font-size:17px;
-    color:white;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size:25px;
+    color:rgb(0, 0, 0);
 }
 
 
