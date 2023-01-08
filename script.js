@@ -1,5 +1,4 @@
 var frontImg = 1;
-var LangIsEnglish = true;
 
 function loadContent(l) {
     shuffleLoad();
@@ -40,12 +39,7 @@ function shuffle() {
     }
 }
 
-function apply() {
-    alert("The application form isn't ready yet!")
-}
-
 function typeEventName(txt, i) {
-    console.log(txt);
     if (i < txt.length) {
         document.getElementById("eventName").innerHTML += txt.charAt(i);
         i++;
@@ -65,3 +59,33 @@ $(document).on("scroll", function() {
         }
     }
 });
+
+function en() {
+    localStorage.setItem("langPref", "en");
+    location.href='index.html';
+}
+
+function fr() {
+    localStorage.setItem("langPref", "fr");
+    console.log(localStorage.getItem('langPref'));
+    location.href='fr.html';
+}
+
+function langReturn() {
+    console.log(localStorage.getItem("langPref"));
+    
+    localStorage.clear("langPref");
+    console.log(localStorage.getItem("langPref"));
+    location.href='../index.html';
+}
+
+/*function checkLang() {
+    let lang = localStorage.getItem("langPref");
+    console.log(lang);
+    //lang = ''; //////////////////////HERE BRUH
+    if (lang == 'en') {
+        location.href='index.html'
+    } else if (lang == 'fr') {
+        location.href='fr.html'
+    }
+}*/

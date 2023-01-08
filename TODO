@@ -1,7 +1,11 @@
-- add french option for all text
+- translate pages
+- SAVE LANGUAGE PREFRENCE FOR THE USER AND AUTOMATICALLY REDIRECT THEM TO THE DESIRED HOME PAGE
+^^^^^^^ USE LOCALSTORAGE really its just language prefrence, it aint sensitive
+
 - fix event title link in div that is extending to the sides of the page
 - when you hover over the shutter it turns like 90 degs
 - prevent button from making divs bigger
+- add mobile support
 
 - fix 2022 thing
 

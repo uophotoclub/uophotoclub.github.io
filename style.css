@@ -5,49 +5,13 @@ body {
     background-attachment:fixed;
 }
 
-/*#flash {
-    width:100vw;
-    height:100vh;
-    position:fixed;
-    top:0;
-    left:0;
-    margin:0;
-    padding:0;
-    background:linear-gradient(to bottom, rgb(74, 204, 255) 0%, rgb(210, 62, 255) 50%, rgb(255, 63, 239) 75%, rgb(255, 61, 181) 100%);
-    z-index:-1;
-}
-#flash::before {
-    content:'';
-    width:100vw;
-    height:100vh;
-    position:fixed;
-    background:linear-gradient(to top, rgb(201, 22, 255) 0%, rgb(119, 194, 255) 50%, rgb(126, 169, 235) 75%, rgb(61, 61, 255) 100%);
-    opacity:0;
-    animation:flash 3500ms ease-in-out 0s infinite alternate-reverse;
-    z-index:-1;
-}
-@keyframes flash {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}*/
-
-
 body, html {
     height: 100%;
   }
   
   .parallax {
-    /* The image used */
     background-image: url('images/changables/feature.jpg');
-  
-    /* Full height */
     height: 100%; 
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,8 +21,6 @@ body, html {
     border: 5px solid black;
     border-radius: 10px;
   }
-  
-  /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
   @media only screen and (max-device-width: 1366px) {
     .parallax {
       background-attachment: scroll;
@@ -68,31 +30,26 @@ body, html {
 
 #name {
     z-index:2;
-    /*transition-duration: 0.5s;*/
     position:absolute;
     right:20%;
     top:2.5%;
     
 }
-/*#name:hover {
-    transition-duration: 0.5s;
-    top:1.5%;
-}*/
 
 #shutter {
     position:fixed;
-    top:4vh;
+    top:5vh;
     left:3.5vw;
     z-index:3;
 }
 
 .lang {
-    position:relative;
+    position:absolute;
     z-index:2;
     border:1px dashed black;
     transition-duration: 0.5s;
     padding:20px;
-    top:auto;
+    top:8vh;
     /*right:2vw;*/
     font-size:25px;
     color:black;
@@ -100,9 +57,9 @@ body, html {
 }
 .lang:hover {
     transition-duration: 0.5s;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(31, 31, 31, 0.3);
     font-size:25px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
 }
 
 
