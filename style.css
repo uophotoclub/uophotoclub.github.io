@@ -27,20 +27,29 @@ body, html {
     }
   } /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_device*/
 
-
-#name {
-    z-index:2;
-    position:absolute;
-    right:20%;
-    top:2.5%;
-    
-}
-
 #shutter {
     position:fixed;
     top:5vh;
     left:3.5vw;
     z-index:3;
+    width:16.5vh;
+}
+
+#name {
+    /*position:absolute;
+    top:2.5%;*/
+    z-index:2;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width:60vw;
+    /*height:21vh;*/
+
+}
+
+#name img {
+    height:100%;
+    width: 100%;
 }
 
 .lang {
@@ -48,17 +57,16 @@ body, html {
     z-index:2;
     border:1px dashed black;
     transition-duration: 0.5s;
-    padding:20px;
+    padding:3vh; /*20px*/
     top:8vh;
-    /*right:2vw;*/
-    font-size:25px;
+    font-size:3.3vh; /*25px 155%*/
     color:black;
     background-color: rgba(0,0,0,0);
 }
 .lang:hover {
     transition-duration: 0.5s;
     background-color: rgba(31, 31, 31, 0.3);
-    font-size:25px;
+    font-size:3.3vh;
     color:rgb(255, 255, 255);
 }
 
@@ -67,7 +75,7 @@ body, html {
     background-color: rgba(36, 35, 35, 0.5); /*linear-gradient(to bottom right, rgb(74, 204, 255) 0%, rgb(235, 43, 253) 100%);*/
     position:absolute;
     margin-left:1%;
-    width:95.3vw;
+    width:95.3vw; /*!!!!!!!!!!!!!*/
     height:22vh;
     transition-duration: 0.4s;
     z-index:1;
@@ -127,6 +135,7 @@ h4 {
     position:relative;
     top:70vh;
     font-size:25px;
+    display:inline-block;
 }
 
 a:link {

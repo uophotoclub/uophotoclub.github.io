@@ -60,32 +60,29 @@ $(document).on("scroll", function() {
     }
 });
 
-function en() {
-    localStorage.setItem("langPref", "en");
-    location.href='index.html';
-}
-
-function fr() {
-    localStorage.setItem("langPref", "fr");
-    console.log(localStorage.getItem('langPref'));
-    location.href='fr.html';
-}
-
-function langReturn() {
-    console.log(localStorage.getItem("langPref"));
-    
-    localStorage.clear("langPref");
-    console.log(localStorage.getItem("langPref"));
-    location.href='../index.html';
-}
-
-/*function checkLang() {
-    let lang = localStorage.getItem("langPref");
-    console.log(lang);
-    //lang = ''; //////////////////////HERE BRUH
-    if (lang == 'en') {
-        location.href='index.html'
-    } else if (lang == 'fr') {
-        location.href='fr.html'
+function langChange(location) {
+    console.log(location);
+    switch(location) {
+        case 'homeEN':
+            console.log('yes');
+            //localStorage.setItem("langPref", "en");
+            window.location.href='index.html';
+            break;
+        case 'eventEN':
+            window.location.href='../en/event.html';
+            break;
+        case 'policyEN':
+            window.location.href='../en/policy.html';
+            break;
+        case 'homeFR':
+            //localStorage.setItem("langPref", "fr");
+            window.location.href='fr.html';
+            break;
+        case 'eventFR':
+            window.location.href='../fr/event.html';
+            break;
+        case 'policyFR':
+            window.location.href='../fr/policy.html';
+            break;
     }
-}*/
+}

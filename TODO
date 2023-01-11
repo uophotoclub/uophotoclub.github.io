@@ -1,15 +1,9 @@
-- translate pages
-- SAVE LANGUAGE PREFRENCE FOR THE USER AND AUTOMATICALLY REDIRECT THEM TO THE DESIRED HOME PAGE
-^^^^^^^ USE LOCALSTORAGE really its just language prefrence, it aint sensitive
-
-- fix event title link in div that is extending to the sides of the page
-- when you hover over the shutter it turns like 90 degs
-- prevent button from making divs bigger
+priority:
 - add mobile support
 
-- fix 2022 thing
-
+non-priority:
+- when you hover over the shutter it turns like 90 degs
+- save language prefrence
 - smt weird with the image reel, 2 dosent change zindex until last second and 3 wont start on a rotated position without teleporting
-
 - add discord iframe:
 <!--<iframe src="https://discord.com/widget?id=1032760418202042419&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
