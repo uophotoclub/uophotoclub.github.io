@@ -1,8 +1,11 @@
 priority:
 - add mobile support
+- re-size cycled images depending on screen size
+- fade animation only happen on home, not on event or policy pages
+- topbar goes oversize to the right when on vertical screen
 
 non-priority:
-- when you hover over the shutter it turns like 90 degs
+- when you hover over the shutter it turns like 90 degs and becomes a bit bigger
 - save language prefrence
 - smt weird with the image reel, 2 dosent change zindex until last second and 3 wont start on a rotated position without teleporting
 - add discord iframe:

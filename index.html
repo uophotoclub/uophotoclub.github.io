@@ -10,11 +10,12 @@
         
     </head>
     <body onload="loadContent('en')">
-        <!--<div id="flash"></div>-->
         <script src="script.js"></script>
-        <a onclick="window.location='index.html'"><img src='images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
         <button class="lang" style="right:5vw" onclick="langChange('homeFR')">Français</button>
-        <div id="topBar"><center><div id="name"><img src="images/name.png" style="height:auto"></div></center></div>
+        <div id="topBar">
+            <a onclick="window.location='index.html'"><img src='images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
+            <center><div id="name"><img src="images/name.png" style="height:auto"></div></center>
+        </div>
         <div class="parallax">
             <a href="en/event.html"><img src="images/changables/event.png" alt="Club Logo event variation" id='eventImg' width="20%"></a>
             <center>
@@ -28,9 +29,9 @@
                     <h2>A place to share. Learn. & Capture.</h2>
                     <button id='shuffleBtn' onclick="shuffle()">Suffle</button>
                     <div id="photos"> <!--try to put them above each other and when you click it moves it to the side changes the z alignement then goes back "behind"-->
-                        <div id='img1' class="imgReel"><img src="images/photo/1.jpg"></div>
-                        <div id='img2' class="imgReel"><img src="images/photo/2.jpg"></div>
-                        <div id='img3' class="imgReel"><img src="images/photo/3.jpg"></div>
+                        <div id='img1' class="imgReel"><img src="images/photo/1.jpg" width="80%"></div>
+                        <div id='img2' class="imgReel"><img src="images/photo/2.jpg" width="80%"></div>
+                        <div id='img3' class="imgReel"><img src="images/photo/3.jpg" width="80%"></div>
                     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 </div>
                 <br>
