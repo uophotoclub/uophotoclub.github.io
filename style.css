@@ -99,7 +99,6 @@ body, html {
     border-radius:10px;
     transition-duration: 0.3s;
     animation: fade 3s ease;
-
 }
 #eventImg:hover {
     transition-duration: 0.3s;
@@ -182,6 +181,11 @@ a:active {
 .imgReel {
     position:absolute;
     left:7vw;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius:5px;
+    font-size:0;
 }
 
 button {
@@ -203,21 +207,21 @@ button:hover {
 @keyframes flip {
     0% {
         left:20;
-        z-index: 7;
+        z-index: 14;
     }
     50% {
         transform:rotate(4deg);
         left:55%;
-        z-index: 7;
+        z-index: 14;
     }
     51% {
-        z-index: 4;
+        z-index: 5;
     }
     80% {
         transform:rotate(4deg);
     }
     100% {
         left:20;
-        z-index: 4;
+        z-index: 5;
     }
 }
