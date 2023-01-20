@@ -1,6 +1,23 @@
 var frontImg = 1;
 const credits = ["Hadi H.", "Jacob T.", "Jacob T.", "Jacob T."];
 
+function zoomImgLoad() {
+    let display = document.getElementById('zoomImg');
+    const source = ["images/photo/1.jpg", "images/photo/2.jpg", "images/photo/3.jpg", "images/photo/4.jpg"];
+    let imgId = 'img'+String(frontImg);
+    let img = document.getElementById(imgId);
+    let imgDisplay = document.getElementById("Displayimg");
+    let captionText = document.getElementById("caption");
+    img.onclick = function(){
+        display.style.display = "block";
+        imgDisplay.src = source[frontImg-1];
+        captionText.innerHTML = "By/Par : "+credits[frontImg-1]; //this.alt
+    }
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        display.style.display = "none";
+    }
+}
 
 $(document).on("scroll", function() {
     var pageTopVal = $(document).scrollTop();
@@ -44,25 +61,6 @@ function loadContent(l) {
         }
     }
 }*/
-function zoomImgLoad() {
-    let display = document.getElementById('zoomImg');
-    const source = ["images/photo/1.jpg", "images/photo/2.jpg", "images/photo/3.jpg", "images/photo/4.jpg"];
-    let imgId = 'img'+String(frontImg);
-    let img = document.getElementById(imgId);
-    let imgDisplay = document.getElementById("Displayimg");
-    let captionText = document.getElementById("caption");
-    img.onclick = function(){
-        display.style.display = "block";
-        imgDisplay.src = source[frontImg-1];
-        captionText.innerHTML = "By/Par : "+credits[frontImg-1]; //this.alt
-    }
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function() { 
-        display.style.display = "none";
-    }
-}
-
-
 
 function shuffleLoad() {
     img1.setAttribute("style", "transform: rotate(" + 12 + "deg)");
@@ -78,10 +76,6 @@ function shuffle() {
     let numOfImgs = 4;
     let imgId = 'img' + String(frontImg);
     let shufObj = document.getElementById(imgId);
-
-    //let nextDisplay = 'Display'+imgId;
-    //document.getElementById("DisplayImg1").setAttribute("id",nextDisplay);
-
     document.getElementById("shuffleBtn").disabled = true;
     shufObj.style.animation='flip 2s ease';
     shufObj.style.zIndex -= numOfImgs;
@@ -114,7 +108,6 @@ function langChange(location) {
     switch(location) {
         case 'homeEN':
             console.log('yes');
-            //localStorage.setItem("langPref", "en");
             window.location.href='index.html';
             break;
         case 'eventEN':
@@ -124,7 +117,6 @@ function langChange(location) {
             window.location.href='../en/policy.html';
             break;
         case 'homeFR':
-            //localStorage.setItem("langPref", "fr");
             window.location.href='fr.html';
             break;
         case 'eventFR':
