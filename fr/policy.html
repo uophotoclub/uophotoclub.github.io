@@ -10,16 +10,18 @@
     </head>
     <body>
         <script src="../script.js"></script>
-        <button class="lang" style="right:5vw" onclick="langChange('policyEN')">English</button>
         <div id="topBar">
             <a href="../fr.html"><img src='../images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
             <center><div id="name"><img src="../images/name.png"></div></center>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br>
+        <ul class="navBar">
+            <li class="navOption"><a href="../index.html">Accueil</a></li>
+            <li class="navOption active"><a href="event.html">Concours</a></li>
+            <li class="navOption"><a href="../fr.html#contact">Contact</a></li>
+            <li class="navOption active"><u>Politique</u></li>
+            <li class="navOption lang" style="float:right;"><a onclick="langChange('policyEN')"><u>English</u></a></li>
+        </ul><br>
         <center>
-            <button onclick="location.href='../fr.html'">
-                Retour
-            </button>
             <div class="outline">
                 <h2>Conditions</h2>
                 <p>

@@ -3,6 +3,7 @@ body {
     background: linear-gradient(to bottom right, rgb(74, 204, 255) 0%, rgb(181, 58, 192) 100%);
     background-repeat: no-repeat;
     background-attachment:fixed;
+    margin:0;
 }
 
 body, html {
@@ -16,10 +17,9 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin:1%;
+    margin:0;
     padding:1%;
-    border: 5px solid black;
-    border-radius: 10px;
+    border-bottom: 5px solid black;
   }
   @media only screen and (max-device-width: 1366px) {
     .parallax {
@@ -28,13 +28,13 @@ body, html {
   } /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_device*/
 
 #shutter {
-    position:fixed;
+    position:absolute;
     display:flex;
     justify-content:left;
     margin:1.3vw;
     margin-top:2.5vh;
     z-index:3;
-    width:16.5vh;
+    width:8vw;
 }
 
 #name {
@@ -52,11 +52,11 @@ body, html {
     width: 100%;
 }
 
-.lang {
+/*.lang {
     position:absolute;
     display:flex;
     justify-content:right;
-    margin-top:6vh;
+    margin-top:15vh;
     padding:3vh;
     z-index:2;
     border:1px dashed black;
@@ -64,37 +64,86 @@ body, html {
     font-size:3.3vh;
     color:black;
     background-color: rgba(0,0,0,0);
-}
-.lang:hover {
+    border-right:0;
+}/*
+/*.lang:hover {
     transition-duration: 0.5s;
     background-color: rgba(31, 31, 31, 0.3);
     font-size:3.3vh;
     color:rgb(255, 255, 255);
-}
+}*/
 
 
 #topBar {
-    background-color: rgba(36, 35, 35, 0.5); /*linear-gradient(to bottom right, rgb(74, 204, 255) 0%, rgb(235, 43, 253) 100%);*/
-    position:absolute;
-    margin-left:1%;
-    width:95.3vw; /*!!!!!!!!!!!!!*/
+    background-color: rgba(36, 35, 35, 1);
+    top:0;
+    margin:0;
+    width:100%;
     height:22vh;
     transition-duration: 0.4s;
     z-index:1;
     font-size:12vh;
     text-align: right;
-    border:5px solid black;
-    border-radius:10px;
+    border-bottom:3px solid black;
 }
 #topBar:hover {
     transition-duration: 0.4s;
     background-color: rgb(36, 35, 35);
 }
 
+.navBar {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgba(104, 104, 104);
+    transition-duration: 0.4s;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+    width:100%;
+    z-index:20;
+    border-bottom:3px solid black;
+}
+.navBar:hover {
+    background-color:rgb(87, 85, 85);
+    transition-duration:0.4s;
+}
+
+.sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.navOption { /*li*/
+    display: block;
+    color:white;
+    text-align:center;
+    padding:1% 2%;
+    text-decoration:none;
+    float:left;
+    border-right: 2px dashed black;
+}
+.navOption:hover:not(.active) {
+    background-color:#777777;
+  } 
+  .active {
+    background-color:#777777;
+  }
+  .lang {
+    border:0;
+    color:black;
+  }
+@media screen and (max-width: 600px) {
+    ul.navBar li.right, 
+    ul.navBar li {float: none;}
+}
+
 #eventImg {
-    position:absolute;
-    top:32vh;
-    left:39vw;
+    position:relative;
+    /*top:32vh;
+    left:39vw;*/
     border:5px solid black;
     border-radius:10px;
     transition-duration: 0.3s;
@@ -103,6 +152,7 @@ body, html {
 #eventImg:hover {
     transition-duration: 0.3s;
     box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.5);
+    cursor:hand;
 }
 
 .fade {
@@ -128,36 +178,36 @@ h2 {
 
 h4 {
     position:relative;
-    top:70vh;
+    /*top:70vh;*/
     font-size:35px;
 }
 
 #eventName {
     position:relative;
-    top:70vh;
+    /*top:70vh;*/
     font-size:25px;
     display:inline-block;
 }
 
 a:link {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
+    color:black;
+    background-color:transparent;
+    text-decoration:underline;
 }
 a:visited {
     color: black;
-    background-color: transparent;
-    text-decoration: underline;
+    background-color:transparent;
+    text-decoration:underline;
 }
 a:hover {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
+    color:rgb(0, 0, 0);
+    background-color:transparent;
+    text-decoration:underline;
 }
 a:active {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
+    color:rgb(0, 0, 0);
+    background-color:transparent;
+    text-decoration:underline;
 }
 
 .outline {
@@ -224,4 +274,58 @@ button:hover {
         left:20;
         z-index: 5;
     }
+}
+
+
+.zoomContainer {
+    display:none; /* Hidden by default */
+    position:fixed; /* Stay in place */
+    z-index:25; /* Sit on top */
+    padding-top:20vh; /* Location of the box */
+    left:0;
+    top:0;
+    width:100%; /* Full width */
+    height:100%; /* Full height */
+    overflow:auto; /* Enable scroll if needed */
+    background-color:rgb(0,0,0); /* Fallback color */
+    background-color:rgba(0,0,0,0.9); /* Black w/ opacity */
+} 
+.zoomImg-display {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}  
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}  
+.zoomImg-display, #caption {  
+    animation-name:slide;
+    animation-duration: 1s;
+}
+@keyframes slide {
+    from {transform: translateY(-900px);} 
+    to {transform: translateY(0px);}
+}
+.close {
+   position:fixed;
+   top:5vh;
+   right:5vw;
+   color: #ffffff;
+   font-size:50px;
+   font-weight:bold;
+   transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+   color: rgb(165, 164, 164);
+   text-decoration: none;
+   cursor: pointer;
 }

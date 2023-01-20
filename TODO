@@ -1,4 +1,8 @@
 priority:
+- https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js  (image zoom-in)
+- https://www.w3schools.com/howto/howto_js_sticky_header.asp  (keep the sticky during scroll)
+- finish porting navBar
+
 - add mobile support
 - re-size cycled images depending on screen size
 - fade animation only happen on home, not on event or policy pages

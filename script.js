@@ -1,6 +1,21 @@
 var frontImg = 1;
+const credits = ["Hadi H.", "Jacob T.", "Jacob T.", "Jacob T."];
+
+
+$(document).on("scroll", function() {
+    var pageTopVal = $(document).scrollTop();
+    var pageBottomVal = pageTopVal + $(window).height();
+    var logos = $(".outline");
+    for (var i = 0; i < logos.length; i++) {
+        if ($(logos[i]).position().top < pageBottomVal) {
+            $(logos[i]).addClass("visible");
+        }
+    }
+});
 
 function loadContent(l) {
+    zoomImgLoad();
+    //navbarLoad();
     shuffleLoad();
     if (l == "en") {
         var txt = 'Winter Holidays!'; //CHANGABLE TEXT
@@ -11,6 +26,43 @@ function loadContent(l) {
         typeEventName(txt, 0);
     }, 1500);
 }
+
+/*function navbarLoad() {
+    window.onscroll = function() {staySticky()};
+
+    var header = document.getElementsByClassName("navBar");
+    //console.log(header);
+    console.log(document.getElementsByClassName("navBar").position);
+    var sticky = header.offsetTop;
+    console.log(sticky);
+
+    function staySticky() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+}*/
+function zoomImgLoad() {
+    let display = document.getElementById('zoomImg');
+    const source = ["images/photo/1.jpg", "images/photo/2.jpg", "images/photo/3.jpg", "images/photo/4.jpg"];
+    let imgId = 'img'+String(frontImg);
+    let img = document.getElementById(imgId);
+    let imgDisplay = document.getElementById("Displayimg");
+    let captionText = document.getElementById("caption");
+    img.onclick = function(){
+        display.style.display = "block";
+        imgDisplay.src = source[frontImg-1];
+        captionText.innerHTML = "By/Par : "+credits[frontImg-1]; //this.alt
+    }
+    let span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        display.style.display = "none";
+    }
+}
+
+
 
 function shuffleLoad() {
     img1.setAttribute("style", "transform: rotate(" + 12 + "deg)");
@@ -24,9 +76,12 @@ function shuffleLoad() {
 
 function shuffle() {
     let numOfImgs = 4;
-    const credits = ["Hadi H.", "Jacob T.", "Jacob T.", "Jacob T."];
     let imgId = 'img' + String(frontImg);
     let shufObj = document.getElementById(imgId);
+
+    //let nextDisplay = 'Display'+imgId;
+    //document.getElementById("DisplayImg1").setAttribute("id",nextDisplay);
+
     document.getElementById("shuffleBtn").disabled = true;
     shufObj.style.animation='flip 2s ease';
     shufObj.style.zIndex -= numOfImgs;
@@ -41,7 +96,7 @@ function shuffle() {
         shuffleLoad();
     }
     document.getElementById("credits").innerHTML = "Image credit/Crédit d'image: " + credits[frontImg-1]
-    console.log(frontImg);
+    zoomImgLoad();
 }
 
 function typeEventName(txt, i) {
@@ -53,17 +108,6 @@ function typeEventName(txt, i) {
         }, 150)
     }
 }
-
-$(document).on("scroll", function() {
-    var pageTopVal = $(document).scrollTop();
-    var pageBottomVal = pageTopVal + $(window).height();
-    var logos = $(".outline");
-    for (var i = 0; i < logos.length; i++) {
-        if ($(logos[i]).position().top < pageBottomVal) {
-            $(logos[i]).addClass("visible");
-        }
-    }
-});
 
 function langChange(location) {
     console.log(location);
