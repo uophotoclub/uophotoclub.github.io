@@ -1,16 +1,12 @@
 priority:
-- https://www.w3schools.com/css/tryit.asp?filename=trycss_image_modal_js  (image zoom-in)
 - https://www.w3schools.com/howto/howto_js_sticky_header.asp  (keep the sticky during scroll)
-- finish porting navBar
 
 - add mobile support
 - re-size cycled images depending on screen size
 - fade animation only happen on home, not on event or policy pages
-- topbar goes oversize to the right when on vertical screen
 
 non-priority:
 - when you hover over the shutter it turns like 90 degs and becomes a bit bigger
 - save language prefrence
-- smt weird with the image reel, 2 dosent change zindex until last second and 3 wont start on a rotated position without teleporting
 - add discord iframe:
 <!--<iframe src="https://discord.com/widget?id=1032760418202042419&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
