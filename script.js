@@ -1,7 +1,7 @@
 var frontImg = 1;
 const credits = ["Hadi H.", "Jacob T.", "Jacob T.", "Jacob T."];
 
-function zoomImgLoad() {
+function zoomImgLoad() { //this function allows users to click on images in the shuffle section and be able to get a better look at it
     let display = document.getElementById('zoomImg');
     const source = ["images/photo/1.jpg", "images/photo/2.jpg", "images/photo/3.jpg", "images/photo/4.jpg"];
     let imgId = 'img'+String(frontImg);
@@ -11,7 +11,7 @@ function zoomImgLoad() {
     img.onclick = function(){
         display.style.display = "block";
         imgDisplay.src = source[frontImg-1];
-        captionText.innerHTML = "By/Par : "+credits[frontImg-1]; //this.alt
+        captionText.innerHTML = "By/Par : "+credits[frontImg-1];
     }
     let span = document.getElementsByClassName("close")[0];
     span.onclick = function() { 
@@ -19,7 +19,7 @@ function zoomImgLoad() {
     }
 }
 
-$(document).on("scroll", function() {
+$(document).on("scroll", function() { //function to reveal items on scroll
     var pageTopVal = $(document).scrollTop();
     var pageBottomVal = pageTopVal + $(window).height();
     var logos = $(".outline");
@@ -30,7 +30,7 @@ $(document).on("scroll", function() {
     }
 });
 
-function loadContent(l) {
+function loadContent(l) { //this function makes sure everything is loaded when the page is opended so all the other functions can work like intended
     zoomImgLoad();
     //navbarLoad();
     shuffleLoad();
@@ -62,7 +62,7 @@ function loadContent(l) {
     }
 }*/
 
-function shuffleLoad() {
+function shuffleLoad() { //setup for the shuffling images
     img1.setAttribute("style", "transform: rotate(" + 12 + "deg)");
     img2.setAttribute("style", "transform: rotate(" + -9 + "deg)");
     img3.setAttribute("style", "transform: rotate(" + 5 + "deg)");
@@ -72,7 +72,7 @@ function shuffleLoad() {
     document.getElementById('img4').style.zIndex = 10;
 }
 
-function shuffle() {
+function shuffle() { //allows the shuffling of the images
     let numOfImgs = 4;
     let imgId = 'img' + String(frontImg);
     let shufObj = document.getElementById(imgId);
@@ -93,7 +93,7 @@ function shuffle() {
     zoomImgLoad();
 }
 
-function typeEventName(txt, i) {
+function typeEventName(txt, i) { //functionfor the typeout effect for the event theme name of the month
     if (i < txt.length) {
         document.getElementById("eventName").innerHTML += txt.charAt(i);
         i++;
@@ -103,7 +103,7 @@ function typeEventName(txt, i) {
     }
 }
 
-function langChange(location) {
+function langChange(location) { //changes language of whatever page the user is on
     console.log(location);
     switch(location) {
         case 'homeEN':
