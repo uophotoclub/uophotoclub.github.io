@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="University of Ottawa, uOttawa, Photography Club, Photo Club">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (min-width: 601px)" href="style.css"/>
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="stylemobile.css"/>
         <title>Home | UO Photo Club</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
@@ -30,7 +31,6 @@
             </center>
         </div>
         <div id="zoomImg" class="zoomContainer">
-            <span class="close">&times;</span>
             <img class="zoomImg-display" id="Displayimg">
             <div id="caption"></div>
         </div>

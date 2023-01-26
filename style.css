@@ -96,7 +96,8 @@ body, html {
     margin:0;
     padding:0;
     overflow: hidden;
-    background-color: rgba(104, 104, 104);
+    background-color: rgba(104, 104, 104, 0.9);
+    /*background: linear-gradient(to right, rgb(51, 122, 150) 0%, rgb(111, 36, 117) 100%);*/
     transition-duration: 0.4s;
     position:sticky;
     position:-webkit-sticky;

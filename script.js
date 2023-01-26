@@ -13,8 +13,8 @@ function zoomImgLoad() { //this function allows users to click on images in the 
         imgDisplay.src = source[frontImg-1];
         captionText.innerHTML = "By/Par : "+credits[frontImg-1];
     }
-    let span = document.getElementsByClassName("close")[0];
-    span.onclick = function() { 
+    let container = document.getElementsByClassName("zoomContainer")[0];
+    container.onclick = function() {
         display.style.display = "none";
     }
 }
@@ -44,8 +44,8 @@ function loadContent(l) { //this function makes sure everything is loaded when t
     }, 1500);
 }
 
-/*function navbarLoad() {
-    window.onscroll = function() {staySticky()};
+/*function navbarLoad() {  //function to keep the navbar at the top of the page when scrolling down, even past it's original div
+    window.onscroll = function() {staySticky()};     //BUT IT AINT WORKN
 
     var header = document.getElementsByClassName("navBar");
     //console.log(header);
