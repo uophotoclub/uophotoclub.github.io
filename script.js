@@ -32,35 +32,16 @@ $(document).on("scroll", function() { //function to reveal items on scroll
 
 function loadContent(l) { //this function makes sure everything is loaded when the page is opended so all the other functions can work like intended
     zoomImgLoad();
-    //navbarLoad();
     shuffleLoad();
     if (l == "en") {
-        var txt = 'Winter Holidays!'; //CHANGABLE TEXT
+        var txt = 'Winter Vibes!'; //CHANGABLE TEXT
     } else if (l == 'fr') {
-        var txt = "Vacances d'hivers!";
+        var txt = "Ambiances d'hiver!";
     }
     setTimeout(function() {
         typeEventName(txt, 0);
     }, 1500);
 }
-
-/*function navbarLoad() {  //function to keep the navbar at the top of the page when scrolling down, even past it's original div
-    window.onscroll = function() {staySticky()};     //BUT IT AINT WORKN
-
-    var header = document.getElementsByClassName("navBar");
-    //console.log(header);
-    console.log(document.getElementsByClassName("navBar").position);
-    var sticky = header.offsetTop;
-    console.log(sticky);
-
-    function staySticky() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-}*/
 
 function shuffleLoad() { //setup for the shuffling images
     img1.setAttribute("style", "transform: rotate(" + 12 + "deg)");
@@ -70,6 +51,9 @@ function shuffleLoad() { //setup for the shuffling images
     document.getElementById('img2').style.zIndex = 12;
     document.getElementById('img3').style.zIndex = 11;
     document.getElementById('img4').style.zIndex = 10;
+    if (window.innerWidth<=600) {
+        document.getElementById("credits").innerHTML = "Image credits in order: "+ credits[0] + ", " + credits[1] + ", " + credits[2] + ", " + credits[3];
+    }
 }
 
 function shuffle() { //allows the shuffling of the images
@@ -89,7 +73,7 @@ function shuffle() { //allows the shuffling of the images
         frontImg = 1;
         shuffleLoad();
     }
-    document.getElementById("credits").innerHTML = "Image credit/Crédit d'image: " + credits[frontImg-1]
+    document.getElementById("credits").innerHTML = "Image credit/Crédit d'image: " + credits[frontImg-1];
     zoomImgLoad();
 }
 

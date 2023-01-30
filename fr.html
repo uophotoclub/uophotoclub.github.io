@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="University of Ottawa, uOttawa, Photography Club, Photo Club">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen and (min-width: 601px)" href="style.css"/>
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="stylemobile.css"/>
         <link href='https://fonts.googleapis.com/css?family=Splash|Roboto Slab' rel='stylesheet'>
         <title>Accueil | Club Photo UO</title>
+        <link rel="icon" href="images/logo/shutter.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     </head>
     <body onload="loadContent('fr')">
@@ -31,7 +33,6 @@
             </center>
         </div>
         <div id="zoomImg" class="zoomContainer">
-            <span class="close">&times;</span>
             <img class="zoomImg-display" id="Displayimg">
             <div id="caption"></div>
         </div>
@@ -41,15 +42,13 @@
                 <div class="outline">
                     <h2>Un endroit à partager. Apprendre. & Capturer.</h2>
                     <button id='shuffleBtn' onclick="shuffle()">Cycler</button>
-                    <div id="photos"> <!--try to put them above each other and when you click it moves it to the side changes the z alignement then goes back "behind"-->
-                        <div id='img1' class="imgReel"><img src="images/photo/1.jpg" width="440vw"></div>
-                        <div id='img2' class="imgReel"><img src="images/photo/2.jpg" width="420vw"></div>
-                        <div id='img3' class="imgReel"><img src="images/photo/3.jpg" width="420vw"></div>
-                        <div id='img4' class="imgReel"><img src="images/photo/4.jpg" width="420vw"></div>
-                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                    <p id="credits">
-                        Image credit/Crédit d'image: Hadi H.
-                    </p>
+                    <div style="padding:5%">
+                        <img src="images/photo/1.jpg" id='img1' class="imgReel">
+                        <img src="images/photo/2.jpg" id='img2' class="imgReel">
+                        <img src="images/photo/3.jpg" id='img3' class="imgReel">
+                        <img src="images/photo/4.jpg" id='img4' class="imgReel">
+                    </div><div style="height:20vw"></div>
+                    <p id="credits">Image credit/Crédit d'image: Hadi H.</p>
                 </div>
                 <br>
                 <div class="outline" id="contact">

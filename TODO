@@ -1,5 +1,4 @@
 - add mobile support
-- re-size cycled images depending on screen size
-- make navBar buttons the entire thing not jsut the text
+- make navBar buttons the entire thing not just the text
 
 - gallery dropdown on event navbar //https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_navbar
