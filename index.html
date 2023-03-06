@@ -22,8 +22,23 @@
             <li class="navOption"><a href="en/event.html">Event</a></li>
             <li class="navOption"><a href="#contact">Contact</a></li>
             <li class="navOption"><a href="en/policy.html">Policy</a></li>
-            <li class="navOption lang" style="float:right;"><a onclick="langChange('homeFR')"><u>Français</u></a></li>
+            <li class="navOption"><button style="all:initial;cursor:pointer;" class="navOption" onclick="showGallery()"><u>Gallery</u> ▼</button></li>
+            <li class="navOption lang" style="float:right;"><a onclick="langChange('homeFR')"><u>Français</u></a></li>   
         </ul>
+        <div id="dropdownContent">
+            <div class="row">
+                <div class="column">
+                    <h3>2023</h3>
+                    <a href="gallery/feb2023.html">Febuary: Winter Vibes</a>
+                </div>
+                <div class="column">
+                    <h3>2022</h3>
+                </div>
+                <div class="column">
+                    <h3>2021</h3>
+                </div>
+            </div>    
+        </div>
         <div class="parallax">
             <center>
                 <br><br><br><br>
@@ -32,6 +47,7 @@
                 <a href="en/event.html"><i><u><div id="eventName" class="fade"></div></u></i></a>
             </center>
         </div>
+        
         <div id="zoomImg" class="zoomContainer">
             <img class="zoomImg-display" id="Displayimg">
             <div id="caption"></div>

@@ -111,3 +111,12 @@ function langChange(location) { //changes language of whatever page the user is 
             break;
     }
 }
+
+function showGallery() { //allows the gallery to be shown when the button is clicked, and hides it when clicked again
+    let div = document.getElementById('dropdownContent');
+    if (div.style.display == "block") {
+        div.style.display = "None";
+    } else {
+        div.style.display = "block";
+    }
+}
