@@ -169,13 +169,49 @@ button {
     visibility: hidden;
 }
 
+/*--------------------*/
+* {
+    box-sizing: border-box;
+}
 
+#dropdownContent {
+    display:none;
+    position:absolute;
+    width:100%;
+    z-index:20;
+    border-bottom:black 3px solid;
+}
 
-/*---------*/
+.column {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    background-color: #757575;
+    height: auto;
+}
+  
+h3 {
+    border-bottom:black 2px solid;
+}
 
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        height: auto;
-      }
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:#00000000 2px solid;
+}
+  
+.column a:hover {
+    background-color: #8d8d8d;
+    border:black 2px dashed;
+    border-radius:10px;
+}
+
+.row:after { /* Clear floats after the columns */
+    content: "";
+    display: table;
+    clear: both;
 }
