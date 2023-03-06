@@ -34,9 +34,9 @@ function loadContent(l) { //this function makes sure everything is loaded when t
     zoomImgLoad();
     shuffleLoad();
     if (l == "en") {
-        var txt = 'Winter Vibes!'; //CHANGABLE TEXT
+        var txt = 'Student Life'; //CHANGABLE TEXT
     } else if (l == 'fr') {
-        var txt = "Ambiances d'hiver!";
+        var txt = "Vie Étudiante";
     }
     setTimeout(function() {
         typeEventName(txt, 0);
