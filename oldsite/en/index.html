@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="University of Ottawa, uOttawa, Photography Club, Photo Club">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen and (min-width: 601px)" href="style.css"/>
+        <link rel="stylesheet" media="only screen and (max-width: 600px)" href="stylemobile.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Splash|Roboto Slab' rel='stylesheet'>
+        <title>Home | UO Photo Club</title>
+        <link rel="icon" href="images/logo/shutter.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body onload="loadContent('en')">
+        <script src="script.js"></script>
+        <div id="topBar"> 
+            <a onclick="window.location='index.html'"><img src='images/logo/shutter.png' alt='Club Logo simple' id="shutter" width="8%"></a>
+            <h7>The Photo Club</h7>
+        </div>
+        <ul class="navBar">
+            <li class="navOption active"><u>Home</u></li>
+            <li class="navOption"><a href="en/event.html">Event</a></li>
+            <li class="navOption"><a href="#contact">Contact</a></li>
+            <li class="navOption"><a href="en/policy.html">Policy</a></li>
+            <li class="navOption"><button style="all:initial;cursor:pointer;" class="navOption" onclick="showGallery()"><u>Gallery</u> ▼</button></li>
+            <li class="navOption lang" style="float:right;"><a onclick="langChange('homeFR')"><u>Français</u></a></li>   
+        </ul>
+        <div id="dropdownContent">
+            <div class="row">
+                <div class="column">
+                    <h3>2023</h3>
+                    <a href="gallery/feb2023.html">Febuary: Winter Vibes</a>
+                    <a href="gallery/feb2023.html">March: Student Life</a>
+                </div>
+                <div class="column">
+                    <h3>2022</h3>
+                </div>
+                <div class="column">
+                    <h3>2021</h3>
+                </div>
+            </div>    
+        </div>
+        <div class="parallax">
+            <center>
+                <br><br><br><br>
+                <a href="en/event.html"><img src="images/changables/en-event.png" alt="Club Logo event variation" id='eventImg' width="20%"></a><br><br>
+                <h4 class="fade">This month's theme:</h4><br>
+                <a href="en/event.html"><i><u><div id="eventName" class="fade"></div></u></i></a>
+            </center>
+        </div>
+        
+        <div id="zoomImg" class="zoomContainer">
+            <img class="zoomImg-display" id="Displayimg">
+            <div id="caption"></div>
+        </div>
+        <center>
+            <i style="float:left;">Image credit: Adib C.</i>
+            <div><br><br>
+                <div class="outline">
+                    <h2>A place to share. Learn. & Capture.</h2>
+                    <button id='shuffleBtn' onclick="shuffle()">Shuffle</button>
+                    <div style="padding:5%">
+                        <img src="images/photo/1.jpg" id='img1' class="imgReel">
+                        <img src="images/photo/2.jpg" id='img2' class="imgReel">
+                        <img src="images/photo/3.jpg" id='img3' class="imgReel">
+                        <img src="images/photo/4.jpg" id='img4' class="imgReel">
+                    </div><div style="height:20vw"></div>
+                    <p id="credits">Image credit/Crédit d'image: Hadi H.</p>
+                </div>
+                <br>
+                <div class="outline" id="contact">
+                    <h2>
+                        Connect with us!
+                    </h2>
+                    <p>
+                        Email: <u>uophotoclub@gmail.com</u><br>
+                        Discord: <a href="https://discord.gg/mqn6KBVzDk">discord.gg/mqn6KBVzDk</a><br>
+                        Instagram: @uophotography_club<br>
+                    </p>
+                </div>
+                <br>
+                <div class="outline">
+                    <h2>
+                        Want to join us in our next event?
+                    </h2>
+                    <p>
+                        We always look forward to new photographers joining us in our events.<br>
+                        Doesn't matter if you're a beginner or a pro: We want to see your photos!
+                    </p>
+                    <a href="https://forms.gle/Bb1C1VjPo4vydtfc6"><button>Apply now!</button></a>
+                    <p style="font-size:12px">By filling this form, you agree to our <a href="en/policy.html">terms and privacy policy</a>.</p>
+                </div>
+            </div>
+            <h6>uOttawa Photography Club - 2022 - Club de Photographie uOttawa</h6>
+        </center>
+    </body>
+</html>

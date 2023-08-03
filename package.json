@@ -1,0 +1,14 @@
+{
+    "name": "uophotoclub.github.io",
+    "description": "uOttawa Photography Club website",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "echo \"Test command is working\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uophotoclub/uophotoclub.github.io.git"
+    },
+    "author": "jwt2706",
+    "homepage": "https://uophotoclub.github.io/"
+}
