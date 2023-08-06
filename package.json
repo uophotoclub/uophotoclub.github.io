@@ -1,14 +1,18 @@
 {
-    "name": "uophotoclub.github.io",
-    "description": "uOttawa Photography Club website",
-    "version": "1.0.0",
-    "scripts": {
-        "test": "echo \"Test command is working\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/uophotoclub/uophotoclub.github.io.git"
-    },
-    "author": "jwt2706",
-    "homepage": "https://uophotoclub.github.io/"
+  "name": "uophotoclub.github.io",
+  "version": "1.0.0",
+  "description": "Source code of the uOttawa Photography Club website.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.8"
+  }
 }
