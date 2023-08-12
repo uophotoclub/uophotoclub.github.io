@@ -1,0 +1,18 @@
+{
+  "name": "uophotoclub.github.io",
+  "version": "1.0.0",
+  "description": "Source code of the uOttawa Photography Club website.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "echo \"Run 'npx vite'\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.8"
+  }
+}
