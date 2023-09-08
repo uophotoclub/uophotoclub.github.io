@@ -8,18 +8,7 @@ body {
 
 body, html {
     height: 100%;
-  }
-  .parallax {
-    background-image: url('images/changables/feature.jpg');
-    height: 40%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin:0;
-    padding:1%;
-    border-bottom: 5px solid black;
-  } /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax_device*/
+}
 
 #shutter {
     position:absolute;
@@ -182,6 +171,7 @@ a:active {
     background-color:rgba(0,0,0,0.2);
     width:75%;
     opacity:1;
+    transform:translate(0,0);
 }
 
 .contactsContainer {

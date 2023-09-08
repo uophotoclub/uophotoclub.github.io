@@ -7,18 +7,6 @@ body {
     overflow-x:hidden;
 }
 
-
-.parallax {
-    background-image: url('images/changables/feature.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom:2%;
-    margin:0;
-    border-bottom: 5px solid black;
-}
-
 #shutter {
     position:absolute;
     display:flex;
@@ -149,6 +137,7 @@ a:active {
     background-color:rgba(0,0,0,0.2);
     width:100%;
     opacity:1;
+    transform:translate(0,0);
 }
 
 .contactsContainer {
