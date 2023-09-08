@@ -184,6 +184,12 @@ a:active {
     opacity:1;
 }
 
+.contactsContainer {
+    display:flex;
+    justify-content:space-around;
+    padding:2%;
+}
+
 .imgReel {
     position:absolute;
     left:7vw;
