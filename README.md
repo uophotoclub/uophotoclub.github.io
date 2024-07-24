@@ -1,2 +1,2 @@
 # uophotoclub.github.io
-:0
+uOttawa Photography Club website :D
