@@ -4,13 +4,22 @@
   "description": "uOttawa Photography Club website :D",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "author": "jwt2706",
   "license": "ISC",
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.17",
-    "tailwind-merge": "^2.4.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "vite": "^5.3.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3"
   }
 }
