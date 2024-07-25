@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   content: ["./src/**/*.{ts,tsx}"],
   darkMode: "class",
   theme: {
@@ -49,4 +49,3 @@ module.exports = {
   },
   plugins: [],
 };
-
