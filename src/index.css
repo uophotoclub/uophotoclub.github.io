@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    font-family: "Edu AU VIC WA NT Hand", arial;
+}
+
+.icon {
+  margin: 0 10px;
+  color: #000;
+}
