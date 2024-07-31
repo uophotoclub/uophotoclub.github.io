@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Links from "./components/Links";
 import Title from "./components/Title";
 import Background from "./components/Background";
+import { FiExternalLink } from 'react-icons/fi';
 
 const App: React.FC = () => {
   const [language, setLanguage] = useState('en');
@@ -19,7 +20,16 @@ const App: React.FC = () => {
       </div>
       <div className="absolute inset-0 flex flex-col items-center justify-center text-black z-20">
         <Title language={language} />
-        <Links language={language}/>
+        <Links language={language} />
+        <a
+          href="/Constitution_of_The_Photography_Club_Bilingual.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-20 text-white underline flex items-center border-2 border-white rounded-lg p-2"
+        >
+          <span className="mr-2">{language === 'en' ? 'Club Constitution' : 'Constitution du club'}</span>
+          <FiExternalLink size={20} />
+        </a>
       </div>
       <Background />
     </div>
