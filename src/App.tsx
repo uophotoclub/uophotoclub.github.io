@@ -6,16 +6,13 @@ import { MdMail } from 'react-icons/md';
 const App: React.FC = () => {
   return (
     <div>
-      <div className="text-container">
-        Bubbles
+      <div className="absolute inset-0 flex items-center justify-center text-white z-20">
+        uOttawa Photography Club d'uOttawa
       </div>
-      <div className="icons-container">
-        <FaDiscord size={30} />
-        <AiFillInstagram size={30} />
-        <MdMail size={30} />
-      </div>
-      <div className="absolute inset-0 mx-8 z-50">
-        bruh
+      <div className="absolute inset-0 flex items-center justify-center space-x-4 text-black z-20">
+        <FaDiscord size={100} />
+        <AiFillInstagram size={100} />
+        <MdMail size={100} />
       </div>
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
