@@ -9,12 +9,12 @@ interface LinksProps {
 
 const Links: React.FC<LinksProps> = ({ language }) => {
   return (
-    <div className="mt-20 flex justify-center space-x-16 text-white">
+    <div className="mt-10 md:mt-20 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-16 text-white">
       <div className="flex flex-col items-center">
         <a href="https://discord.gg/mqn6KBVzDk" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
           <FaDiscord size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
           <p className="text-center mt-2">
-            {language === 'en' ? 'Click to Join!' : 'Cliquez pour joindre!'}
+            {language === 'en' ? 'Join our Community!' : 'Joignez notre communauté!'}
           </p>
         </a>
       </div>
