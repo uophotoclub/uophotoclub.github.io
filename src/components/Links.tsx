@@ -9,26 +9,26 @@ interface LinksProps {
 
 const Links: React.FC<LinksProps> = ({ language }) => {
   return (
-    <div className="mt-20 flex space-x-16 text-white">
+    <div className="mt-20 flex justify-center space-x-16 text-white">
       <div className="flex flex-col items-center">
-        <a href="https://discord.gg/mqn6KBVzDk" target="_blank" rel="noopener noreferrer">
+        <a href="https://discord.gg/mqn6KBVzDk" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
           <FaDiscord size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          <p className="text-center mt-2">
+            {language === 'en' ? 'Click to Join!' : 'Cliquez pour joindre!'}
+          </p>
         </a>
-        <p className="text-center">
-          {language === 'en' ? 'Click to Join!' : 'Cliquez pour joindre!'}
-        </p>
       </div>
       <div className="flex flex-col items-center">
-        <a href="https://www.instagram.com/uophotography_club/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/uophotography_club/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
           <AiFillInstagram size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          <p className="text-center mt-2">@uophotography_club</p>
         </a>
-        <p className="text-center">@uophotography_club</p>
       </div>
       <div className="flex flex-col items-center">
-        <a href="mailto:uophotoclub@gmail.com">
+        <a href="mailto:uophotoclub@gmail.com" className="flex flex-col items-center">
           <MdMail size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          <p className="text-center mt-2">uophotoclub@gmail.com</p>
         </a>
-        <p className="text-center">uophotoclub@gmail.com</p>
       </div>
     </div>
   );
