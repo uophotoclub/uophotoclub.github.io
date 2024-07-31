@@ -31,6 +31,9 @@ const App: React.FC = () => {
           <FiExternalLink size={20} />
         </a>
       </div>
+      <footer className="text-white text-center p-4" style={{ position: 'absolute', bottom: 0, width: '100%', zIndex: 10 }}>
+        <p>uOttawa Photography Club &copy; 2024 Club de Photographie d'uOttawa</p>
+      </footer>
       <Background />
     </div>
   );
