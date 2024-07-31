@@ -27,7 +27,7 @@ const App: React.FC = () => {
           rel="noopener noreferrer"
           className="mt-10 md:mt-20 text-white underline flex items-center border-2 border-white rounded-lg p-2"
         >
-          <span className="mr-2">{language === 'en' ? 'Club Constitution' : 'Constitution du club'}</span>
+          <span className="mr-2">{language === 'en' ? 'Club Constitution' : 'Constitution du Club'}</span>
           <FiExternalLink size={20} />
         </a>
       </div>

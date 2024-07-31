@@ -15,19 +15,20 @@ const Links: React.FC<LinksProps> = ({ language }) => {
           <FaDiscord size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
           <p className="text-center mt-2">
             {language === 'en' ? 'Join our Community!' : 'Joignez notre communauté!'}
+            <br />discord.gg/mqn6KBVzDk
           </p>
         </a>
       </div>
       <div className="flex flex-col items-center">
         <a href="https://www.instagram.com/uophotography_club/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
           <AiFillInstagram size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
-          <p className="text-center mt-2">@uophotography_club</p>
+          <p className="text-center mt-2">Follow us on Instagram!<br />@uophotography_club</p>
         </a>
       </div>
       <div className="flex flex-col items-center">
         <a href="mailto:uophotoclub@gmail.com" className="flex flex-col items-center">
           <MdMail size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
-          <p className="text-center mt-2">uophotoclub@gmail.com</p>
+          <p className="text-center mt-2">Contact us!<br />uophotoclub@gmail.com</p>
         </a>
       </div>
     </div>
