@@ -5,6 +5,7 @@ import Background from "./components/Background";
 import { FiExternalLink } from 'react-icons/fi';
 
 const App: React.FC = () => {
+  const currentYear = new Date().getFullYear();
   const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
@@ -32,7 +33,7 @@ const App: React.FC = () => {
         </a>
       </div>
       <footer className="text-white text-center p-4" style={{ position: 'absolute', bottom: 0, width: '100%', zIndex: 10 }}>
-        <p>uOttawa Photography Club &copy; 2024 Club de Photographie d'uOttawa</p>
+        <p>&copy; 2021 - {currentYear} uOttawa Photography Club | Club de Photographie d'uOttawa</p>
       </footer>
       <Background />
     </div>
