@@ -2,7 +2,6 @@ import React from "react";
 import { FaDiscord } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { MdMail } from 'react-icons/md';
-import './index.scss';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +13,9 @@ const App: React.FC = () => {
         <FaDiscord size={30} />
         <AiFillInstagram size={30} />
         <MdMail size={30} />
+      </div>
+      <div className="absolute inset-0 mx-8 z-50">
+        bruh
       </div>
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
