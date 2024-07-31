@@ -6,13 +6,34 @@ import { MdMail } from 'react-icons/md';
 const App: React.FC = () => {
   return (
     <div>
-      <div className="absolute inset-0 flex items-center justify-center text-white z-20">
-        uOttawa Photography Club d'uOttawa
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-black z-20">
+        <div className="flex items-center mb-4 text-white text-8xl -mt-20">
+          <img src="/logo.png" alt="Logo" className="h-32 w-32 mr-4" />
+          <div>
+            <div className="text-5xl"><i>uOttawa</i></div>
+            <div className="underline decoration-4 underline-offset-4">Photography Club</div>
+          </div>
+        </div>
+        <div className="mt-20 flex space-x-16 text-white">
+        <div className="flex flex-col items-center">
+          <a href="https://discord.gg/mqn6KBVzDk" target="_blank" rel="noopener noreferrer">
+            <FaDiscord size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          </a>
+          <p className="text-center">Click to Join!</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <a href="https://www.instagram.com/uophotography_club/" target="_blank" rel="noopener noreferrer">
+            <AiFillInstagram size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          </a>
+          <p className="text-center">@uophotography_club</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <a href="mailto:uophotoclub@gmail.com">
+            <MdMail size={120} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
+          </a>
+          <p className="text-center">uophotoclub@gmail.com</p>
+        </div>
       </div>
-      <div className="absolute inset-0 flex items-center justify-center space-x-4 text-black z-20">
-        <FaDiscord size={100} />
-        <AiFillInstagram size={100} />
-        <MdMail size={100} />
       </div>
       <div className="gradient-bg">
         <svg xmlns="http://www.w3.org/2000/svg">
