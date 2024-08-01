@@ -177,14 +177,14 @@ html, body {
 }
 
 .popup {
-  animation: popup 0.3s ease-in-out;
+  animation: popup 0.2s ease-in-out;
 }
 
 @keyframes popup {
   0% {
     transform: scale(1);
   }
-  50% {
+  10% {
     transform: scale(1.2);
   }
   100% {
