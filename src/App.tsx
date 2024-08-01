@@ -16,12 +16,12 @@ const App: React.FC = () => {
     <div className="relative min-h-screen overflow-hidden">
       <Background />
       <div className="absolute inset-0 z-10 overflow-auto">
-        <div className="absolute top-4 left-4 z-30 text-white text-lg md:text-xl">
+        <div className="mt-4 ml-4 z-30 text-white text-lg md:text-xl">
           <button onClick={toggleLanguage} className="mr-2">
             <span className={language === 'en' ? 'underline' : ''}>En</span> / <span className={language === 'fr' ? 'underline' : ''}>Fr</span>
           </button>
         </div>
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-black z-20 p-4">
+        <div className="md:mt-20 flex flex-col items-center justify-center text-black z-20 p-4">
           <Title language={language} />
           <Links language={language} />
           <a
@@ -34,7 +34,7 @@ const App: React.FC = () => {
             <FiExternalLink size={20} />
           </a>
         </div>
-        <footer className="absolute bottom-0 w-full text-white text-center p-4" style={{ zIndex: 10 }}>
+        <footer className="w-full text-white text-center p-4 z-10">
           <p>&copy; 2021 - {currentYear} uOttawa Photography Club | Club de Photographie d'uOttawa</p>
         </footer>
       </div>
