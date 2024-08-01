@@ -22,7 +22,7 @@ const App: React.FC = () => {
               <span className={language === 'en' ? 'underline' : ''}>En</span> / <span className={language === 'fr' ? 'underline' : ''}>Fr</span>
             </button>
           </div>
-          <div className="md:mt-20 flex flex-col items-center justify-center text-black z-20 p-4">
+          <div className="md:mt-8 flex flex-col items-center justify-center text-black z-20 p-4">
             <Title language={language} />
             <Links language={language} />
             <a
