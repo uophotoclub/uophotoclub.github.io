@@ -6,7 +6,7 @@ interface TitleProps {
 
 const Title: React.FC<TitleProps> = ({ language }) => {
   return (
-    <div className="flex flex-col items-center mb-4 text-white">
+    <div className="flex flex-col items-center mb-4 mx-auto text-white">
       <div className="flex flex-col md:flex-row items-center mb-4 text-4xl md:text-8xl">
         <img src="/logo.png" alt="Logo" className="h-32 w-32 mb-2 md:mb-0 md:mr-4" />
         <div>
