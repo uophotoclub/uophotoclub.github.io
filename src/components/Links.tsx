@@ -28,7 +28,7 @@ const Links: React.FC<LinksProps> = ({ language }) => {
           <a href="https://discord.gg/cT4fxxc5kr" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center">
             <FaDiscord size={100} className="hover:scale-110 transition-transform duration-300 ease-in-out" />
             <p className="text-center mt-2">
-              {language === 'en' ? 'Join our Community!' : 'Joignez notre communauté!'}
+              {language === 'en' ? 'Join our Community!' : 'Rejoignez notre communauté!'}
               <br />
               <span onClick={(e) => { e.preventDefault(); handleIconClick('discord.gg/cT4fxxc5kr'); }} className="cursor-pointer">
                 discord.gg/cT4fxxc5kr <MdContentCopy className={`inline-block ml-1 ${popup === 'discord.gg/cT4fxxc5kr' ? 'popup' : ''}`} />
